@@ -10,9 +10,14 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/uikit.css" rel="stylesheet">
     <!--Skrypty-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.bootpag.min.js"></script>
+
+
     <!--Czcionki-->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -66,34 +71,27 @@
         </div>
     </header>
     <!--CONTENT-->
-    <section class="content">
-        <div class="container">
-            <div class="row">
-                <h1>Witamy w Spa Lublin</h1>
-                <hr style="border-color:black">
-            </div>
-            <div class="row rowdan">
-                <div class="col-lg-3 pull-left">
-                    <img class="img-responsive" src="./img/masaz-lozko-mozaika.jpg" width="300px;" alt="">
-                </div>
-                <div class="col-lg-9 ">
-                    <p>Dla Gości szukających relaksu i wyciszenia oferujemy skuteczne zabiegi pielęgnacyjne, kameralny wypoczynek, komfort i rozpieszczenie zmysłów poprzez rytuały SPA. Będziecie mogli Państwo skorzystać z masaży wyszczuplających, energetyzujących
-                        i relaksujących, które mogą być wykonane na wyjątkowym, podgrzewanym łóżku z falą wodną oraz koloroterapią.</p>
-                </div>
-            </div>
-            <div class="row rowdan">
-                <div class="col-lg-3 pull-right ">
-                    <img class="img-responsive" src="./img/jacuzzi.jpg" width="300px;" alt="">
-                </div>
-                <div class="col-lg-9 ">
-                    <p>Dla Gości szukających relaksu i wyciszenia oferujemy skuteczne zabiegi pielęgnacyjne, kameralny wypoczynek, komfort i rozpieszczenie zmysłów poprzez rytuały SPA. Będziecie mogli Państwo skorzystać z masaży wyszczuplających, energetyzujących
-                        i relaksujących, które mogą być wykonane na wyjątkowym, podgrzewanym łóżku z falą wodną oraz koloroterapią.</p>
-                </div>
-            </div>
+    <div class="container-fluid paginacja content">
+        <div id="content2"></div>
+        <div id="content">strona</div>
+    </div>
+
+    <script>
+        $('#content2').bootpag({
+            total: 3
+        }).on("page", function(event, num) {
+            $("#content").html("Page " + num); // or some ajax content loading...
+
+            // ... after content load -> change total to 10
+            $(this).bootpag({
+                total: 12,
+                maxVisible: 3
+            });
+
+        });
+    </script>
 
 
-        </div>
-    </section>
     <!--STOPKA-->
     <footer>
         <p>Copyright © 2017 Super Spa Lublin. Wszelkie prawa zastrzeżone.</p>
