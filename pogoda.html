@@ -13,6 +13,7 @@
     <!--Skrypty-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/pogoda.js"></script>
     <!--Czcionki-->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -68,32 +69,19 @@
     </header>
     <!--CONTENT-->
     <section class="content">
-        <div class="container">
-            <div class="row">
-                <h1>Witamy w Spa Lublin</h1>
-                <hr style="border-color:black">
+        <div class="container-fluid">
+            <div class="col-md-12 pogoda ">
+                <div>
+                    <h3>Aktualna Pogoda</h3>
+                    <hr>
+                </div>
+                <div id="wInfo"></div>
+                <div class="icon"></div>
+                <button class="btn btn-info" id="temp"></button>
+                <hr>
             </div>
-            <div class="row rowdan">
-                <div class="col-lg-3 col-md-12">
-                    <img class="img-responsive" src="./img/masaz-lozko-mozaika.jpg" align="center" width="300px;" alt="">
-                </div>
-                <div class="col-lg-9 pull-right col-md-12">
-                    <p>Dla Gości szukających relaksu i wyciszenia oferujemy skuteczne zabiegi pielęgnacyjne, kameralny wypoczynek, komfort i rozpieszczenie zmysłów poprzez rytuały SPA. Będziecie mogli Państwo skorzystać z masaży wyszczuplających, energetyzujących
-                        i relaksujących, które mogą być wykonane na wyjątkowym, podgrzewanym łóżku z falą wodną oraz koloroterapią.</p>
-                </div>
-            </div>
-            <div class="row rowdan">
-                <div class="col-lg-3 pull-right col-md-12">
-                    <img class="img-responsive" src="./img/jacuzzi.jpg" width="300px;" alt="">
-                </div>
-                <div class="col-lg-9 col-md-12">
-                    <p>Dla Gości szukających relaksu i wyciszenia oferujemy skuteczne zabiegi pielęgnacyjne, kameralny wypoczynek, komfort i rozpieszczenie zmysłów poprzez rytuały SPA. Będziecie mogli Państwo skorzystać z masaży wyszczuplających, energetyzujących
-                        i relaksujących, które mogą być wykonane na wyjątkowym, podgrzewanym łóżku z falą wodną oraz koloroterapią.</p>
-                </div>
-            </div>
-
-
         </div>
+
     </section>
     <!--STOPKA-->
     <footer>
