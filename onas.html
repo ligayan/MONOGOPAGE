@@ -13,9 +13,6 @@
     <!--Skrypty-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/pogoda.js"></script>
-    <script src="js/pagination.js"></script>
-
     <!--Czcionki-->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -46,7 +43,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rozwijane <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="onas.html">O Nas</a></li>
+                            <li><a href="#">O Nas</a></li>
                             <li><a href="pogoda.html">Pogoda</a></li>
                             <li><a href="paginacja.html">Paginacja</a></li>
                         </ul>
@@ -72,18 +69,30 @@
     <section class="content">
         <div class="container">
             <div class="row">
-                <h1>Aktualna pogoda</h1>
+                <h1>O Nas</h1>
                 <hr style="border-color:black">
             </div>
-            <div class="col-md-12 pogoda ">
-
-                <div id="wInfo"></div>
-                <div class="icon"></div>
-                <button class="btn btn-info" id="temp"></button>
-                <hr>
+            <div class="row rowdan">
+                <div class="col-lg-3 pull-left">
+                    <img class="img-responsive thumbnail" src="./img/masaz-lozko-mozaika.jpg" width="300px;" alt="">
+                </div>
+                <div class="col-lg-9 ">
+                    <p>Dla Gości szukających relaksu i wyciszenia oferujemy skuteczne zabiegi pielęgnacyjne, kameralny wypoczynek, komfort i rozpieszczenie zmysłów poprzez rytuały SPA. Będziecie mogli Państwo skorzystać z masaży wyszczuplających, energetyzujących
+                        i relaksujących, które mogą być wykonane na wyjątkowym, podgrzewanym łóżku z falą wodną oraz koloroterapią.</p>
+                </div>
             </div>
-        </div>
+            <div class="row rowdan">
+                <div class="col-lg-3 pull-right ">
+                    <img class="img-responsive thumbnail" src="./img/jacuzzi.jpg" width="300px;" alt="">
+                </div>
+                <div class="col-lg-9 ">
+                    <p>Dla Gości szukających relaksu i wyciszenia oferujemy skuteczne zabiegi pielęgnacyjne, kameralny wypoczynek, komfort i rozpieszczenie zmysłów poprzez rytuały SPA. Będziecie mogli Państwo skorzystać z masaży wyszczuplających, energetyzujących
+                        i relaksujących, które mogą być wykonane na wyjątkowym, podgrzewanym łóżku z falą wodną oraz koloroterapią.</p>
+                </div>
+            </div>
 
+
+        </div>
     </section>
     <!--STOPKA-->
     <footer>
