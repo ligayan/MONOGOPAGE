@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     function showWeather() {
         //Pobieranie pogody z api
-        //var weatherApi = 'http://api.openweathermap.org/data/2.5/weather?q=Lublin,pl&appid=68bf0520ba5e0b83ffe2e3568f6eca01';
+        var weatherApi = 'http://api.openweathermap.org/data/2.5/weather?q=Lublin,pl&appid=68bf0520ba5e0b83ffe2e3568f6eca01';
 
 
         $.getJSON(weatherApi, function(json) {
@@ -21,9 +21,9 @@ $(document).ready(function() {
                 //Json na HTML
             var html = "";
             html += "<p><span>" + json.name + "</span>," + json.sys.country + "</p>";
-            html += "<p>" + mainWea + "</p>";
             html += "<p>" + "Prędkosc wiatru : " + wind + "m/s";
             html += "<p>" + "Zachmurzenie : " + hum + "%";
+            html += "<p>" + mainWea + "</p>";
             $("#wInfo").html(html);
             var tempid = $("#temp");
             tempid.html(ctemp + " &degC");

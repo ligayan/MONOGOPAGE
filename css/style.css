@@ -1,0 +1,58 @@
+/*HEADER*/
+
+.headerbg {
+    text-align: center;
+    height: 50vh;
+    background-image: url('../img/headerbg.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerbg h1 {
+    color: white;
+    padding: 20vh;
+    margin: 0 0;
+    font-size: 80px;
+}
+
+.headerbg2 {
+    background-color: burlywood;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+
+/*POGODA*/
+
+.pogoda {
+    font-size: 1.1vw;
+    text-align: center;
+    margin-top: 2.5vh;
+    background-color: burlywood;
+}
+
+div.rain::before {
+    content: '\26C8';
+    font-size: 50px;
+}
+
+div.cloud::before {
+    content: '\2601';
+    font-size: 50px;
+}
+
+div.clear:before {
+    content: '\2600';
+    font-size: 50px;
+}
+
+
+/*Content*/
+
+.content {
+    height: 50vh;
+    background-image: url('../img/contentbg1.jpg');
+    background-position: center;
+    background-size: cover;
+}
