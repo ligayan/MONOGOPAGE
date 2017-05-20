@@ -1,3 +1,91 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*NAWIGACJA*/
+
+#menu {
+    background-color: #2c3e50;
+}
+
+.navbar {
+    font-size: 1.9rem;
+    color: #ffffff;
+    padding: 1rem;
+    border: none;
+}
+
+.dropdown-menu {
+    background-color: #2c3e50;
+    font-size: 20px;
+    border: none;
+    text-align: right;
+}
+
+.dropdown-menu li a {
+    color: white;
+    padding: 10px;
+}
+
+.dropdown-menu li a:hover {
+    color: black;
+    background-color: orange;
+    transition: all 1s;
+}
+
+.navbar-collapse {
+    border-color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: orange;
+    transition: all 1s;
+}
+
+.navbar-nav>li>a {
+    display: block;
+    color: white;
+}
+
+.nav li a:focus,
+.nav .open>a:focus {
+    color: white;
+    background-color: transparent;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    color: black;
+    background-color: orange;
+}
+
+.navbar-nav>li>a:hover {
+    display: block;
+    color: black;
+    background-color: orange;
+    transition: all 1s;
+}
+
+.navbar-toggle {
+    color: white;
+    border: 1px solid white;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-toggle:hover {
+    background-color: orange;
+}
+
+
 /*HEADER*/
 
 header {
@@ -15,9 +103,11 @@ header {
 
 .headerbg h1 {
     color: white;
-    padding: 20vh;
+    padding-top: 20vh;
     margin: 0 0;
     font-size: 80px;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 10px 10px 10px black;
 }
 
 .headerbg2 {
@@ -59,4 +149,19 @@ div.clear:before {
     background-image: url('../img/contentbg1.jpg');
     background-position: center;
     background-size: cover;
+}
+
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    background-color: gray;
+    ;
+    height: 60px;
+}
+
+footer p {
+    font-size: 10px;
+    color: white;
 }
