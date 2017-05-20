@@ -1,5 +1,9 @@
 /*HEADER*/
 
+header {
+    margin-top: 50px;
+}
+
 .headerbg {
     text-align: center;
     height: 50vh;
