@@ -10,12 +10,13 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/uikit.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
     <!--Skrypty-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/jquery.bootpag.min.js"></script>
+
 
 
     <!--Czcionki-->
@@ -59,7 +60,7 @@
     </nav>
 
 
-    </div>
+
     <!--NAGŁOWEK-->
     <header>
         <div class="container-fluid">
@@ -71,25 +72,10 @@
         </div>
     </header>
     <!--CONTENT-->
-    <div class="container-fluid paginacja content">
-        <div id="content2"></div>
-        <div id="content">strona</div>
+    <div class="container-fluid">
+        <div class="karuzela"></div>
     </div>
 
-    <script>
-        $('#content2').bootpag({
-            total: 3
-        }).on("page", function(event, num) {
-            $("#content").html("Page " + num); // or some ajax content loading...
-
-            // ... after content load -> change total to 10
-            $(this).bootpag({
-                total: 12,
-                maxVisible: 3
-            });
-
-        });
-    </script>
 
 
     <!--STOPKA-->
