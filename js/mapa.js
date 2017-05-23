@@ -12,9 +12,11 @@ function initMap() {
 
 
 }
-var image1 = 'http://maps.google.com/mapfiles/kml/pal3/icon39.png';
-var image2 = 'http://maps.google.com/mapfiles/kml/pal3/icon37.png';
 
+
+function podmiana() {
+    image = document.formularz.ikona.value
+}
 
 
 
