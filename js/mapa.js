@@ -13,7 +13,7 @@ function initMap() {
 
 }
 
-
+// Funkcja podmienia pobiera ikony z pola Select
 function podmiana() {
     image = document.formularz.ikona.value
 }
@@ -31,16 +31,9 @@ function geocodeAddress(geocoder, resultsMap) {
                 position: results[0].geometry.location,
                 icon: image
 
-
-
-
-
-
-
-
             });
         } else {
-            alert('Geocode was not successful for the following reason: ' + status);
+            alert('Nic nie wpisałeś! : Musisz wpisać nazwę. np. Lublin');
         }
     });
 }
