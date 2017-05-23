@@ -7,17 +7,35 @@ function initMap() {
 
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
+
     });
+
+
 }
+var image1 = 'http://maps.google.com/mapfiles/kml/pal3/icon39.png';
+var image2 = 'http://maps.google.com/mapfiles/kml/pal3/icon37.png';
+
+
+
 
 function geocodeAddress(geocoder, resultsMap) {
     var address = document.getElementById('address').value;
     geocoder.geocode({ 'address': address }, function(results, status) {
         if (status === 'OK') {
             resultsMap.setCenter(results[0].geometry.location);
+
             var marker = new google.maps.Marker({
                 map: resultsMap,
-                position: results[0].geometry.location
+                position: results[0].geometry.location,
+                icon: image
+
+
+
+
+
+
+
+
             });
         } else {
             alert('Geocode was not successful for the following reason: ' + status);

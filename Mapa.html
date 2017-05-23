@@ -79,6 +79,16 @@
                     <div id="floating-panel">
                         <input id="address" type="textbox" value="Sydney, NSW">
                         <input id="submit" type="button" value="Szukaj">
+                        <form id="formularz" name="formularz">
+                            <div class="form-group">
+                                <label for="pytanie">Wybierz ikone</label>
+                                <select name="pytanie" size="1" class="form-control" id="ikona" onChange="podmiana()">
+                                    <option value="image1">ikona1</option>
+                                    <option value="image2">ikona2</option>  
+                                </select>
+
+                            </div>
+                        </form>
                     </div>
                     <div id="map"></div>
                 </div>
