@@ -189,3 +189,11 @@ footer p {
 .karuzela {
     padding-bottom: 50px;
 }
+
+
+/*MAPA*/
+
+#map {
+    min-height: 500px;
+    margin-bottom: 30px;
+}
