@@ -13,6 +13,8 @@ function initMap() {
 
 }
 
+var image;
+
 // Funkcja podmienia pobiera ikony z pola Select
 function podmiana() {
     image = document.formularz.ikona.value
